@@ -32,4 +32,21 @@ f = open("demofile.txt", "rt")
 
 Because "r" for read, and "t" for text are the default values, you do not need to specify them.
 
+### Python Read Files
+
+f = open("demofile.txt", "r")
+print(f.read())
+
+If the file is located in a different location, you will have to specify the file path, like this:
+
+f = open("D:\\myfiles\welcome.txt", "r")
+
+print(f.read())
+
 Note: Make sure the file exists, or else you will get an error.
+
+By default the read() method returns the whole text, but you can also specify how many characters you want to return:
+
+f = open("demofile.txt", "r")
+
+print(f.read(5))  --returns first 5 character of the file. 
